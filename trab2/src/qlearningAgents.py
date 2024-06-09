@@ -61,7 +61,7 @@ class QLearningAgent(ReinforcementAgent):
           terminal state, you should return a value of 0.0.
         """
         
-        if self.getLegalActions(state) == 0:
+        if len(self.getLegalActions(state))  == 0:
           return 0.0
         
         return self.getQValue(state, self.computeActionFromQValues(state))
@@ -206,8 +206,8 @@ class ApproximateQAgent(PacmanQAgent):
         weights = list(self.getWeights().keys())
         difference = reward + self.discount * self.computeValueFromQValues(nextState) - self.getQValue(state, action)
            
-        for weight in weights:
-          self.weights[weight] = self.weights[weight] + self.alpha * difference * self.featExtractor.getFeatures(state, action)[weight]
+         for feature in features:
+          self.weights[feature] += self.alpha * difference * self.featExtractor.getFeatures(state, action)[weight]
 
     def final(self, state):
         "Called at the end of each game."
