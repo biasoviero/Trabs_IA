@@ -21,7 +21,7 @@
 
 def question2():
     answerDiscount = 0.9
-    answerNoise = 0.0
+    answerNoise = 0.01
     return answerDiscount, answerNoise
 
 # Prefer the close exit (+1), risking the cliff (-10)
