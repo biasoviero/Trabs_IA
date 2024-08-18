@@ -24,42 +24,6 @@ def question2():
     answerNoise = 0.01
     return answerDiscount, answerNoise
 
-# Prefer the close exit (+1), risking the cliff (-10)
-def question3a():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
-    return answerDiscount, answerNoise, answerLivingReward
-
-# Prefer the close exit (+1), but avoiding the cliff (-10)
-def question3b():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
-    return answerDiscount, answerNoise, answerLivingReward
-
-
-#Prefer the distant exit (+10), risking the cliff (-10)
-def question3c():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
-    return answerDiscount, answerNoise, answerLivingReward
-
-#Prefer the distant exit (+10), avoiding the cliff (-10)
-def question3d():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
-    return answerDiscount, answerNoise, answerLivingReward
-
-# Prefer the distant exit (+10), avoiding the cliff (-10)
-def question3e():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None 
-    return answerDiscount, answerNoise, answerLivingReward
-
 if __name__ == '__main__':
     print('Answers to analysis questions:')
     import analysis
