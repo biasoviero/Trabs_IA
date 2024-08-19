@@ -6,8 +6,8 @@ from advsearch.tttm.gamestate import GameState
 import advsearch.timer as timer
 
 # mude your_agent pelo nome do seu modulo nos imports abaixo
-import advsearch.your_agent.minimax as minimax          
-import advsearch.your_agent.tttm_minimax as tttm_agent  
+import advsearch.Othellas.minimax as minimax          
+import advsearch.Othellas.tttm_minimax as tttm_agent  
 
 def mirror_move(state: GameState) -> Tuple[int, int]:
     """

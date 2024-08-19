@@ -2,7 +2,7 @@ import unittest
 from collections import OrderedDict, defaultdict
 from typing import Tuple, Union
 
-import advsearch.your_agent.minimax as minimax  # mude your_agent pelo nome do seu modulo
+import advsearch.Othellas.minimax as minimax  # mude your_agent pelo nome do seu modulo
 
 # uma arvore de jogo abstrata que contem o exemplo do  Russel&Norvig's para a poda alfa-beta
 # cada nodo eh um dict de acoes e seus nos filhos (cada acao eh uma tupla, conforme os jogos 'reais') 
